@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Upzon — Grow Faster. Look Better.">
+  <meta name="keywords" content="creative agency, social media, thumbnail design, short video editing">
+  <meta name="theme-color" content="#050505">
+  <title>Upzon — Grow Faster. Look Better.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true"><span class="loader-mark"></span></div>
+  <div class="site-noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Upzon home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span class="brand-name" data-bind="branding.logoText">Upzon</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta magnetic" href="#contact" data-bind="buttons.header">Start a project</a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-a" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-b" aria-hidden="true"></div>
+      <div class="floating-cube cube-one" aria-hidden="true"><span></span></div>
+      <div class="floating-cube cube-two" aria-hidden="true"><span></span></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Creative direction for the digital now</p>
+        <h1 id="hero-title" data-bind="hero.title">Grow Faster.<br><em>Look Better.</em></h1>
+        <p class="hero-copy" data-bind="hero.subtitle">Upzon shapes high-impact visual content for brands ready to move with clarity and momentum.</p>
+        <div class="hero-actions">
+          <a class="button button-primary magnetic" href="#contact" data-bind="buttons.primary">Contact us <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost magnetic" href="#services" data-bind="buttons.secondary">Get started <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-bottom" aria-hidden="true"><span>Scroll to explore</span><i></i></div>
+    </section>
+
+    <section class="about section content-section" id="about" aria-labelledby="about-heading">
+      <div class="section-index reveal"><span>01</span><i></i><small>About Upzon</small></div>
+      <div class="about-layout">
+        <div class="about-intro reveal">
+          <p class="eyebrow">Built for sharper presence</p>
+          <h2 id="about-heading" data-bind="about.heading">A creative partner for digital growth.</h2>
+        </div>
+        <div class="about-body reveal">
+          <p class="lead" data-bind="about.intro">Upzon is a creative agency focused on stronger social presence, intentional thumbnails, and short-form video that holds attention.</p>
+          <div class="principles">
+            <article><span class="principle-number">01</span><h3>Mission</h3><p data-bind="about.mission">Make every digital touchpoint feel clearer, more distinctive, and ready to perform.</p></article>
+            <article><span class="principle-number">02</span><h3>Vision</h3><p data-bind="about.vision">Build visual systems that help ambitious brands look ahead of the moment.</p></article>
+          </div>
+        </div>
+      </div>
+      <div class="about-sculpture" aria-hidden="true"><span class="sculpture-core"></span><span class="sculpture-ring ring-1"></span><span class="sculpture-ring ring-2"></span><span class="sculpture-dot"></span></div>
+    </section>
+
+    <section class="services section content-section" id="services" aria-labelledby="services-heading">
+      <div class="section-index reveal"><span>02</span><i></i><small>Capabilities</small></div>
+      <div class="services-heading-row reveal"><div><p class="eyebrow">Focused by design</p><h2 id="services-heading">Made to be seen.<br><em>Built to move.</em></h2></div><p>Three focused services for a stronger visual presence.</p></div>
+      <div class="service-grid" id="service-list" aria-live="polite"></div>
+    </section>
+
+    <section class="contact section content-section" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="section-index reveal"><span>03</span><i></i><small>Contact</small></div>
+      <div class="contact-layout">
+        <div class="contact-copy reveal"><p class="eyebrow">Start the conversation</p><h2 id="contact-heading" data-bind="contact.heading">Let’s make your next move <em>matter.</em></h2><p data-bind="contact.copy">Tell us what needs to look better, move faster, or connect more clearly.</p><div class="social-links" data-social-container aria-label="Social links"></div></div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <label><span>Name</span><input name="name" type="text" autocomplete="name" required placeholder="Your name"></label>
+          <label><span>Email</span><input name="email" type="email" autocomplete="email" required placeholder="you@company.com"></label>
+          <label><span>Message</span><textarea name="message" rows="4" required placeholder="Tell us about your project"></textarea></label>
+          <button class="button button-primary magnetic" type="submit" data-bind="buttons.contact">Send message <span aria-hidden="true">↗</span></button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span class="brand-name" data-bind="branding.logoText">Upzon</span></a><p data-bind="footer.statement">Grow Faster. Look Better.</p><a href="#top" class="back-top" aria-label="Back to top">↑</a></div>
+    <div class="footer-bottom"><p data-bind="footer.copyright">© 2026 Upzon. All rights reserved.</p><div class="footer-nav"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a><a href="admin/login.html">Admin</a></div></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
